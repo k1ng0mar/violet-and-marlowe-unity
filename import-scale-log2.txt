@@ -1,0 +1,1554 @@
+Unity Editor version:    6000.3.20f1 (c9ba695d4f07)
+Branch:                  6000.3/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #6-Ubuntu SMP PREEMPT Tue May 26 12:04:34 UTC 2026
+Kernel version:          7.0.0-1006-aws
+Architecture:            x86_64
+Available memory:        15984 MB
+Date:                    2026-07-27T05:18:25Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Initialize udev device monitor.
+[Licensing::IpcConnector] Channel LicenseClient-ubuntu doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 960121)
+
+COMMAND LINE ARGUMENTS:
+/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Unity
+-batchmode
+-nographics
+-projectPath
+/home/ubuntu/violet-and-marlowe-unity
+-executeMethod
+ImportScaleRunner.Run
+-logFile
+import-scale-log2.txt
+Successfully changed project path to: /home/ubuntu/violet-and-marlowe-unity
+/home/ubuntu/violet-and-marlowe-unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [128809182338432]  Target information:
+
+Player connection [128809182338432]  * "[IP] 172.31.34.122 [Port] 55504 [Flags] 2 [Guid] 2272805675 [EditorId] 2272805675 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [128809182338432]  * "[IP] 172.20.0.1 [Port] 55504 [Flags] 2 [Guid] 2272805675 [EditorId] 2272805675 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [128809182338432]  * "[IP] 172.17.0.1 [Port] 55504 [Flags] 2 [Guid] 2272805675 [EditorId] 2272805675 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [128809182338432]  * "[IP] 100.75.243.40 [Port] 55504 [Flags] 2 [Guid] 2272805675 [EditorId] 2272805675 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [128809182338432]  * "[IP] 172.19.0.1 [Port] 55504 [Flags] 2 [Guid] 2272805675 [EditorId] 2272805675 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [128809182338432] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [128809182338432] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-960113" after 0.3 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ubuntu" at "2026-07-27T05:18:26.116279Z"
+[SignatureVerifier] Application signature verification not supported on this platform.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              66c5332bce164a81b61a90aea2f4ad0b
+  Correlation Id:          8ce7e857077b9629445efe8759f4ad02
+  External correlation Id: 7367294166787423148
+  Machine Id:              x90OabNnkMz+jWI7P8jSYabrvAU=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ubuntu" (connect: 0.57s, validation: 0.09s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ubuntu-notifications" at "2026-07-27T05:18:26.20881Z"
+[Licensing::Module] Connected to LicensingClient (PId: 960121, launch time: 0.00, total connection time: 0.66s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 11270696607855-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.02
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.70s
+[Licensing::Module] Licensing is initialized (took 0.29s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+ALSA lib confmisc.c:855:(parse_card) [error.core] cannot find card '0'
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) [error.core] error evaluating strings
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) [error.core] error evaluating name
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5734:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM default
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+Forced to initialize FMOD to to the device driver's system output rate 48000, this may impact performance and/or give inconsistent experiences compared to selected sample rate 48000
+ALSA lib confmisc.c:855:(parse_card) [error.core] cannot find card '0'
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) [error.core] error evaluating strings
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) [error.core] error evaluating name
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5734:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM default
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+FMOD initialized on nosound output
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+[Licensing::Client] Successfully resolved entitlement details
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.20f1 (c9ba695d4f07)
+[Subsystems] Discovering subsystems at path /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /home/ubuntu/violet-and-marlowe-unity/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = '/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Managed'
+Mono path[1] = '/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
+Mono config path = '/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56113
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.002526 seconds.
+- Loaded All Assemblies, in  0.595 seconds
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Licensing::Client] Successfully resolved entitlement details
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.658 seconds
+Domain Reload Profiling: 2253ms
+	BeginReloadAssembly (153ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (12ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (277ms)
+		LoadAssemblies (142ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (271ms)
+			TypeCache.Refresh (269ms)
+				TypeCache.ScanAssembly (245ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1658ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1592ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (100ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (156ms)
+			ProcessInitializeOnLoadAttributes (269ms)
+			ProcessInitializeOnLoadMethodAttributes (1059ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 61 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.12.4 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e)
+    com.unity.inputsystem@1.19.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.12 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.11 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.visualscripting@8bed5ad90189)
+    com.unity.ide.visualstudio@2.0.26 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.ide.rider@3.0.40 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.ide.rider@e4950c6d131b)
+    com.unity.editorcoroutines@1.1.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.editorcoroutines@87a15ed012c2)
+    com.unity.performance.profile-analyzer@1.4.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.performance.profile-analyzer@2bb26871883c)
+    com.unity.testtools.codecoverage@1.3.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.testtools.codecoverage@19a841221620)
+    com.unity.searcher@4.9.4 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.29 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.burst@6bb9aca3ef38)
+    com.unity.mathematics@1.3.3 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.mathematics@19a9377c4ffa)
+    com.unity.collections@2.6.6 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.collections@9796e5ee0d9e)
+    com.unity.settings-manager@2.1.1 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.settings-manager@0b8638c5ce86)
+    com.unity.nuget.mono-cecil@1.11.6 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.feature.development@1.0.2 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.feature.development@767aadbc6eb7)
+    com.unity.render-pipelines.universal@17.3.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.render-pipelines.universal@25dc82fa87d3)
+    com.unity.test-framework@1.6.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.test-framework@0bd5c5194236)
+    com.unity.multiplayer.center@1.0.1 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb)
+    com.unity.ugui@2.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.ugui@5e3c170cdd2e)
+    com.unity.modules.accessibility@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.ext.nunit@ec2d0043d6fc)
+    com.unity.render-pipelines.core@17.3.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.render-pipelines.core@11fc77efc310)
+    com.unity.shadergraph@17.3.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.shadergraph@1e99c239931b)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.render-pipelines.universal-config@dbe3fd082d8f)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+A meta data file (.meta) exists but its asset 'Assets/_quarantine/DiagRunner.cs.meta.txt' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+A meta data file (.meta) exists but its asset 'Assets/_quarantine/ScaleBakeDiagnostics.cs.meta.txt' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+A meta data file (.meta) exists but its asset 'Assets/_quarantine/ScaleBaker.cs.meta.txt' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+A meta data file (.meta) exists but its asset 'Assets/_quarantine/ScaleBakeReporter.cs.meta.txt' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+A meta data file (.meta) exists but its asset 'Assets/_quarantine/ScaleBakeRunner.cs.meta.txt' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://unix:/tmp/ilpp.sock-921afec3e86500132eca42854089e699
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/ubuntu/violet-and-marlowe-unity/
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 67.4275ms
+Starting: /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Tools/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /home/ubuntu/violet-and-marlowe-unity
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll" in favor of "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@6bb9aca3ef38/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 43.7020ms
+DisplayProgressbar: Compiling Scripts
+ExitCode: 4 Duration: 1s593ms
+[643/838    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1300b0aE-inputdata.json
+*** Tundra requires additional run (1.56 seconds), 2 items updated, 673 evaluated
+Starting: /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/netcorerun/netcorerun "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe" "Library/Bee/1300b0aE.dag.json" "Library/Bee/1300b0aE-inputdata.json" "Library/Bee/buildprogram0.traceevents"
+WorkingDir: /home/ubuntu/violet-and-marlowe-unity
+ExitCode: 0 Duration: 1s312ms
+Starting: /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Tools/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aE.dag" --continue-on-failure --dagfilejson="Library/Bee/1300b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: /home/ubuntu/violet-and-marlowe-unity
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 1.6960ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll, with 147 defines and 342 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library/Bee/artifacts/1300b0aE.dag/Unity.Collections.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@6bb9aca3ef38/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 612.7257ms
+ExitCode: 0 Duration: 2s568ms
+Finished compiling graph: 832 nodes, 15882 flattened edges (13328 ToBuild, 138 ToUse), maximum node priority 921
+[           0s] Delete 5 artifact files that are no longer in use. (like Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp.rsp)
+[432/829    0s] WriteText Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.rsp
+[638/829    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[825/829    1s] Csc Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets/Editor/HUDSetup.cs(282,31): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/HUDSetup.cs(289,32): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/VioletTextureAssigner.cs(15,16): warning CS0219: The variable 'fbxPath' is assigned but its value is never used
+[826/829    0s] ILPostProcess Library/Bee/artifacts/1300b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll, with 147 defines and 342 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[827/829    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[828/829    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (2.54 seconds), 6 items updated, 829 evaluated
+Assets/Editor/HUDSetup.cs(282,31): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/HUDSetup.cs(289,32): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/VioletTextureAssigner.cs(15,16): warning CS0219: The variable 'fbxPath' is assigned but its value is never used
+Assets/Editor/VioletTextureAssigner.cs(15,16): warning CS0219: The variable 'fbxPath' is assigned but its value is never used
+AssetDatabase: script compilation time: 6.256660s
+Total cache size 217349797
+Total cache size after purge 217349797, took 00:00:00.0684622
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.290 seconds
+Start importing Assets/_quarantine using Guid(68c65c96e8b83221c8ca925b40002e79) (DefaultImporter) -> (artifact id: '5d70fc486b2968d06ee2a0e4e7b5b40f') in 0.041279397 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Build settings updated: WalkTheBlock scene added
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+BuildSettingsSetup:.cctor () (at Assets/Editor/BuildSettingsSetup.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:124)
+
+(Filename: Assets/Editor/BuildSettingsSetup.cs Line: 14)
+
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.663 seconds
+Domain Reload Profiling: 5952ms
+	BeginReloadAssembly (284ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (31ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (880ms)
+		LoadAssemblies (523ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (474ms)
+			TypeCache.Refresh (348ms)
+				TypeCache.ScanAssembly (323ms)
+			BuildScriptInfoCaches (102ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (4664ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4326ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (54ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (274ms)
+			ProcessInitializeOnLoadAttributes (3626ms)
+			ProcessInitializeOnLoadMethodAttributes (359ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (38ms)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debug/ProbeSamplingDebugMesh.fbx using Guid(20be25aac4e22ee49a7db76fb3df6de2) (FBXImporter) -> (artifact id: 'da37725ce8f74c129af40c639d33e5d1') in 0.041413169 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesFixture.fbx using Guid(b28fa67a0ff82c5478f27368dc627683) (FBXImporter)Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+ -> (artifact id: '3c98cf3736c3df0dd9e9539c7e7343c2') in 0.164276642 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/UnityMaterialBall.fbx using Guid(39857cfad1651644682ff5b772e6e697) (FBXImporter) -> (artifact id: 'de68d1adb42fabac1db36153c1af5b5e') in 0.127455488 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/BackgroundMesh.fbx using Guid(b9ae429aca254fa41966db24b9e53232) (FBXImporter) -> (artifact id: 'a3041d951e1504af92742010600f2870') in 0.025972783 seconds
+Start importing Assets/Art/Characters/Violet/violet_tbp.fbx using Guid(eb5207fcea3db20a99ffddda3211f4cc) (FBXImporter)[VioletImport] OnPreProcess: globalScale=142 useFileScale=False animType=Human
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPreprocessModel () (at Assets/Editor/VioletModelImportSettings.cs:26)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PreprocessModel (string) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:721)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 26)
+
+Keyframe reduction: Ratio: 100.000000%;
+[VioletImport] OnPostProcess: globalScale=142 useFileScale=False
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:35)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 35)
+
+[VioletImport] Post-import mesh bounds: Center: (0.29, 0.61, -83.76), Extents: (67.71, 19.38, 83.65) size.y=38.7510
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:40)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 40)
+
+[VioletImport] Avatar isHuman=True
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:46)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 46)
+
+[VioletImport] Hips worldY=97.5671
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:52)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 52)
+
+[VioletImport] Head worldY=140.3250
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:56)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 56)
+
+[VioletImport] LeftFoot worldY=10.3171
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:60)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 60)
+
+[VioletImport] Skinned bounds: center=(0.03, 77.45, 1.93) size=(136.75, 179.90, 58.41) size.y=179.8988
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:64)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 64)
+
+[VioletImport] Skinned feet minY=-12.4953
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:66)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 66)
+
+Rig Error:  Avatar Rig Configuration mis-match. Bone length in configuration does not match position in animation file:
+	'mixamorig:LeftUpLeg' : position error = 7754.712402 mm
+	'mixamorig:LeftLeg' : position error = 38869.542969 mm
+	'mixamorig:LeftFoot' : position error = 44552.089844 mm
+	'mixamorig:LeftToeBase' : position error = 15178.208984 mm
+	'mixamorig:RightUpLeg' : position error = 7748.601074 mm
+	'mixamorig:RightLeg' : position error = 38868.218750 mm
+	'mixamorig:RightFoot' : position error = 44550.625000 mm
+	'mixamorig:RightToeBase' : position error = 15311.305664 mm
+ -> (artifact id: '8c43df9aaf1d1b4809684e8cf2ac7605') in 0.17881748 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesFloorSpotlight.fbx using Guid(1dbf28c1bb322474d981b2dc555e28b0) (FBXImporter) -> (artifact id: '490672cc34e463f7c4dc69f988f60e75') in 0.023549257 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesSpotlightModel.fbx using Guid(4e8732d4875cc0647b52b55a218072b6) (FBXImporter) -> (artifact id: '45d0011195f70d97cb50d1f886449295') in 0.043195528 seconds
+Start importing Packages/com.unity.render-pipelines.core/Editor/Resources/DebugProbe.fbx using Guid(9e1c97fc44f9a8744b61b58f72c56de4) (FBXImporter) -> (artifact id: '76208809e88ce87c2e08a7d561108efc') in 0.025066102 seconds
+Start importing Assets/Art/Characters/violet.fbx using Guid(6fd010add683f3bc0afef135f4b45fc2) (FBXImporter)A polygon of Mesh 'mesh_rep_0_ori_repair_quad.001' in Assets/Art/Characters/violet.fbx is self-intersecting and has been discarded.
+ -> (artifact id: '2c83ef85069bbccd4499dddc0426d60c') in 0.216956318 seconds
+Start importing Assets/_quarantine/ScaleBaker.cs.txt using Guid(c183dff66578ec6558b3c1a3bdf03b35) (TextScriptImporter) -> (artifact id: 'ae10ba1ca068ebe10e77776217906e51') in 0.005197875 seconds
+Start importing Assets/_quarantine/ScaleBakeReporter.cs.txt using Guid(960e805d9a93ed7f480f1cc20dfe7c7e) (TextScriptImporter) -> (artifact id: '2532c11f67b647d5e6023214b81d9ae7') in 0.002593647 seconds
+Start importing Assets/_quarantine/ScaleBakeDiagnostics.cs.txt using Guid(f8e0f831d00da8f62881a7cb865bd640) (TextScriptImporter) -> (artifact id: 'f4fd7d56912df5d2d381f525b2d6d89d') in 0.002491102 seconds
+Start importing Assets/_quarantine/ScaleBakeRunner.cs.txt using Guid(9e05e557a9c3b4377a1ab205ddd7a488) (TextScriptImporter) -> (artifact id: 'd29221145171bd6c7b773b3d3fcd69af') in 0.003617673 seconds
+Start importing Assets/_quarantine/DiagRunner.cs.txt using Guid(3f413a7965513d4e896271a6075940c9) (TextScriptImporter) -> (artifact id: '0bc87b32bd280f49827912c58ffee9ee') in 0.002928394 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=09963dec2132b088ab22f131024c9cff): Total: 14.951 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=15 (actual=15, local cache=0, cache server=0)
+		Asset DB Process Time: managed=72 ms, native=6595 ms
+		Asset DB Callback time: managed=640 ms, native=21 ms
+		Scripting: domain reloads=1, domain reload time=1291 ms, compile time=6261 ms, other=68 ms
+		Project Asset Count: scripts=1316, non-scripts=2315
+		Asset File Changes: new=5, changed=5, moved=0, deleted=5
+		Scan Filter Count: 1
+	InvokeCustomDependenciesCallbacks: 0.007ms
+	InvokePackagesCallback: 11.452ms
+	ApplyChangesToAssetFolders: 0.586ms
+	Scan: 631.344ms
+	OnSourceAssetsModified: 1.037ms
+	CategorizeAssetsWithTransientArtifact: 77.063ms
+	ProcessAssetsWithTransientArtifactChanges: 123.085ms
+	UnregisterDeletedAssets: 0.004ms
+	CategorizeAssets: 72.183ms
+	ImportOutOfDateAssets: 5596.975ms (-1584.382ms without children)
+		ImportManagerImport: 917.937ms (9.233ms without children)
+			ImportInProcess: 908.465ms
+			UpdateCategorizedAssets: 0.239ms
+		CompileScripts: 6261.037ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 0.393ms
+		ReloadImportedAssets: 0.011ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.909ms
+		InitializingProgressBar: 0.008ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
+		OnDemandSchedulerStart: 1.058ms
+	PostProcessAllAssets: 645.452ms
+	Hotreload: 4.483ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 2.167ms
+	PersistCurrentRevisions: 0.352ms
+	UnloadStreamsEnd: 0.002ms
+	GenerateScriptTypeHashes: 3.467ms
+	Untracked: 7784.973ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 0.101ms
+Initializing Unity extensions:
+UpdateMenuTitleForLanguage: 10
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-violet-and-marlowe-unity
+Cannot add menu item 'VioletAndMarlowe/Build Scene With Violet Model' for method 'VioletImportAndSceneBuilder.BuildSceneWithVioletModel' because a menu item with the same name already exists.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.MenuItemScriptCommand:Update (UnityEditor.MenuItem,System.Reflection.MethodInfo) (at /home/bokken/build/output/unity/unity/Editor/Mono/MenuItem.cs:128)
+UnityEditor.MenuService:ExtractMenuItemsFromAttributes () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorMode/MenuService.cs:375)
+UnityEditor.MenuService:GetMenuItemsFromAttributesById (string) (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorMode/MenuService.cs:310)
+UnityEditor.MenuService:GetMenuItemsFromAttributes () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorMode/MenuService.cs:64)
+
+(Filename: /home/bokken/build/output/unity/unity/Editor/Mono/MenuItem.cs Line: 128)
+
+Unloading 232 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6632 unused Assets / (10.1 MB). Loaded Objects now: 7367.
+Memory consumption went from 220.2 MB to 210.1 MB.
+Total: 25.697224 ms (FindLiveObjects: 0.940821 ms CreateObjectMapping: 0.803558 ms MarkObjects: 12.672554 ms  DeleteObjects: 11.275317 ms)
+
+========== IMPORT SCALE ITERATION ==========
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:18)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 18)
+
+[ImportScaleRunner] CURRENT SETTINGS: globalScale=142 useFileScale=False bakeAxisConversion=False
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:28)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 28)
+
+[ImportScaleRunner] --- Iteration 1: F=142.00 ---
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:34)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 34)
+
+Start importing Assets/Art/Characters/Violet/violet_tbp.fbx using Guid(eb5207fcea3db20a99ffddda3211f4cc) (FBXImporter)[VioletImport] OnPreProcess: globalScale=142 useFileScale=False animType=Human
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPreprocessModel () (at Assets/Editor/VioletModelImportSettings.cs:26)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PreprocessModel (string) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:721)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 26)
+
+Keyframe reduction: Ratio: 100.000000%;
+[VioletImport] OnPostProcess: globalScale=142 useFileScale=False
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:35)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 35)
+
+[VioletImport] Post-import mesh bounds: Center: (0.29, 0.61, -83.76), Extents: (67.71, 19.38, 83.65) size.y=38.7510
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:40)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 40)
+
+[VioletImport] Avatar isHuman=True
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:46)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 46)
+
+[VioletImport] Hips worldY=97.5671
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:52)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 52)
+
+[VioletImport] Head worldY=140.3250
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:56)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 56)
+
+[VioletImport] LeftFoot worldY=10.3171
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:60)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 60)
+
+[VioletImport] Skinned bounds: center=(0.03, 77.45, 1.93) size=(136.75, 179.90, 58.41) size.y=179.8988
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:64)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 64)
+
+[VioletImport] Skinned feet minY=-12.4953
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:66)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 66)
+
+Rig Error:  Avatar Rig Configuration mis-match. Bone length in configuration does not match position in animation file:
+	'mixamorig:LeftUpLeg' : position error = 7754.712402 mm
+	'mixamorig:LeftLeg' : position error = 38869.542969 mm
+	'mixamorig:LeftFoot' : position error = 44552.089844 mm
+	'mixamorig:LeftToeBase' : position error = 15178.208984 mm
+	'mixamorig:RightUpLeg' : position error = 7748.601074 mm
+	'mixamorig:RightLeg' : position error = 38868.218750 mm
+	'mixamorig:RightFoot' : position error = 44550.625000 mm
+	'mixamorig:RightToeBase' : position error = 15311.305664 mm
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+[/home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs line 303]
+
+ -> (artifact id: '8c43df9aaf1d1b4809684e8cf2ac7605') in 0.165638782 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f0e9e824966c4a695be93ba8cc8ac518): Total: 0.282 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=5be7b34d5f696e87d8e282b21361e266): Total: 0.123 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[ImportScaleRunner] F=142.00 | skinned size.y=179.8988 | center.y=77.4541 | feetY=-12.4953
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:84)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 84)
+
+[ImportScaleRunner] Hips Y=97.5671 | Head Y=140.3250 | LeftFoot Y=10.3171
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:85)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 85)
+
+[ImportScaleRunner] isHuman=True | texture=null
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:86)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 86)
+
+[ImportScaleRunner] Off target. F_new = 142.00 * 1.8/179.8988 = 1.42
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:108)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 108)
+
+[ImportScaleRunner] --- Iteration 2: F=1.42 ---
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:34)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 34)
+
+Start importing Assets/Art/Characters/Violet/violet_tbp.fbx using Guid(eb5207fcea3db20a99ffddda3211f4cc) (FBXImporter)[VioletImport] OnPreProcess: globalScale=142 useFileScale=False animType=Human
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPreprocessModel () (at Assets/Editor/VioletModelImportSettings.cs:26)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PreprocessModel (string) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:721)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 26)
+
+Keyframe reduction: Ratio: 100.000000%;
+[VioletImport] OnPostProcess: globalScale=142 useFileScale=False
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:35)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 35)
+
+[VioletImport] Post-import mesh bounds: Center: (0.29, 0.61, -83.76), Extents: (67.71, 19.38, 83.65) size.y=38.7510
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:40)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 40)
+
+[VioletImport] Avatar isHuman=True
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:46)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 46)
+
+[VioletImport] Hips worldY=97.5671
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:52)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 52)
+
+[VioletImport] Head worldY=140.3250
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:56)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 56)
+
+[VioletImport] LeftFoot worldY=10.3171
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:60)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 60)
+
+[VioletImport] Skinned bounds: center=(0.03, 77.45, 1.93) size=(136.75, 179.90, 58.41) size.y=179.8988
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:64)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 64)
+
+[VioletImport] Skinned feet minY=-12.4953
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:66)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 66)
+
+Rig Error:  Avatar Rig Configuration mis-match. Bone length in configuration does not match position in animation file:
+	'mixamorig:LeftUpLeg' : position error = 7754.712402 mm
+	'mixamorig:LeftLeg' : position error = 38869.542969 mm
+	'mixamorig:LeftFoot' : position error = 44552.089844 mm
+	'mixamorig:LeftToeBase' : position error = 15178.208984 mm
+	'mixamorig:RightUpLeg' : position error = 7748.601074 mm
+	'mixamorig:RightLeg' : position error = 38868.218750 mm
+	'mixamorig:RightFoot' : position error = 44550.625000 mm
+	'mixamorig:RightToeBase' : position error = 15311.305664 mm
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+[/home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs line 303]
+
+ -> (artifact id: '047833fcb63ac974e8ee6c9a856c1675') in 0.137831039 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7c833a84ad8a4eef8897cb2b6bad170a): Total: 0.187 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=8267a542b7eb01a8babc3d19c4658b4b): Total: 0.136 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[ImportScaleRunner] F=1.42 | skinned size.y=179.8988 | center.y=77.4541 | feetY=-12.4953
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:84)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 84)
+
+[ImportScaleRunner] Hips Y=97.5671 | Head Y=140.3250 | LeftFoot Y=10.3171
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:85)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 85)
+
+[ImportScaleRunner] isHuman=True | texture=null
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:86)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 86)
+
+[ImportScaleRunner] Off target. F_new = 1.42 * 1.8/179.8988 = 0.01
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:108)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 108)
+
+[ImportScaleRunner] --- Iteration 3: F=0.01 ---
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:34)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 34)
+
+Start importing Assets/Art/Characters/Violet/violet_tbp.fbx using Guid(eb5207fcea3db20a99ffddda3211f4cc) (FBXImporter)[VioletImport] OnPreProcess: globalScale=142 useFileScale=False animType=Human
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPreprocessModel () (at Assets/Editor/VioletModelImportSettings.cs:26)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PreprocessModel (string) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:721)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 26)
+
+Keyframe reduction: Ratio: 100.000000%;
+[VioletImport] OnPostProcess: globalScale=142 useFileScale=False
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:35)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 35)
+
+[VioletImport] Post-import mesh bounds: Center: (0.29, 0.61, -83.76), Extents: (67.71, 19.38, 83.65) size.y=38.7510
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:40)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 40)
+
+[VioletImport] Avatar isHuman=True
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:46)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 46)
+
+[VioletImport] Hips worldY=97.5671
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:52)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 52)
+
+[VioletImport] Head worldY=140.3250
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:56)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 56)
+
+[VioletImport] LeftFoot worldY=10.3171
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:60)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 60)
+
+[VioletImport] Skinned bounds: center=(0.03, 77.45, 1.93) size=(136.75, 179.90, 58.41) size.y=179.8988
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:64)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 64)
+
+[VioletImport] Skinned feet minY=-12.4953
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+VioletModelImportSettings:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/VioletModelImportSettings.cs:66)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+(Filename: Assets/Editor/VioletModelImportSettings.cs Line: 66)
+
+Rig Error:  Avatar Rig Configuration mis-match. Bone length in configuration does not match position in animation file:
+	'mixamorig:LeftUpLeg' : position error = 7754.712402 mm
+	'mixamorig:LeftLeg' : position error = 38869.542969 mm
+	'mixamorig:LeftFoot' : position error = 44552.089844 mm
+	'mixamorig:LeftToeBase' : position error = 15178.208984 mm
+	'mixamorig:RightUpLeg' : position error = 7748.601074 mm
+	'mixamorig:RightLeg' : position error = 38868.218750 mm
+	'mixamorig:RightFoot' : position error = 44550.625000 mm
+	'mixamorig:RightToeBase' : position error = 15311.305664 mm
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string) (at /home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs:303)
+UnityEditor.AssetImporter:SaveAndReimport () (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPipeline/AssetImporter.bindings.cs:115)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:41)
+
+[/home/bokken/build/output/unity/unity/Modules/AssetDatabase/Editor/ScriptBindings/AssetDatabase.bindings.cs line 303]
+
+ -> (artifact id: 'e04952bae2a351faa9c72cbbb14f557c') in 0.239037574 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=85dcc9257da7d5e59a05fb5748f8619c): Total: 0.307 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=105 ms, native=179 ms
+		Asset DB Callback time: managed=19 ms, native=3 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=1316, non-scripts=2315
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 0.003ms
+	ApplyChangesToAssetFolders: 0.217ms
+	Scan: 8.499ms
+	OnSourceAssetsModified: 0.045ms
+	CategorizeAssetsWithTransientArtifact: 0.010ms
+	ProcessAssetsWithTransientArtifactChanges: 0.214ms
+	CategorizeAssets: 26.584ms
+	ImportOutOfDateAssets: 243.414ms (-0.989ms without children)
+		ImportManagerImport: 241.468ms (2.102ms without children)
+			ImportInProcess: 239.338ms
+			UpdateCategorizedAssets: 0.029ms
+		ReloadNativeAssets: 0.023ms
+		UnloadImportedAssets: 0.448ms
+		ReloadImportedAssets: 1.470ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.527ms
+		InitializingProgressBar: 0.007ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.004ms
+		OnDemandSchedulerStart: 0.456ms
+	PostProcessAllAssets: 21.583ms
+	Hotreload: 1.056ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.265ms
+	UnloadStreamsBegin: 0.002ms
+	PersistCurrentRevisions: 0.227ms
+	UnloadStreamsEnd: 0.001ms
+	Untracked: 5.239ms
+
+Asset Pipeline Refresh (id=21fdefd629dbf96a9a8af959ec3206b6): Total: 0.159 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[ImportScaleRunner] F=0.01 | skinned size.y=179.8988 | center.y=77.4541 | feetY=-12.4953
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:84)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 84)
+
+[ImportScaleRunner] Hips Y=97.5671 | Head Y=140.3250 | LeftFoot Y=10.3171
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:85)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 85)
+
+[ImportScaleRunner] isHuman=True | texture=null
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:86)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 86)
+
+[ImportScaleRunner] Off target. F_new = 0.01 * 1.8/179.8988 = 0.00
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:108)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 108)
+
+[ImportScaleRunner] Failed to converge in 3 iterations. Last F=0.00
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:112)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 112)
+
+========== IMPORT SCALE FAILED ==========
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ImportScaleRunner:Run () (at Assets/Editor/ImportScaleRunner.cs:113)
+
+(Filename: Assets/Editor/ImportScaleRunner.cs Line: 113)
+
+Killing ADB server in 0.088387 seconds.
+The command could not be loaded, possibly because:
+  * You intended to execute a .NET application:
+      The application 'build-server' does not exist.
+  * You intended to execute a .NET SDK command:
+      No .NET SDKs were found.
+
+Download a .NET SDK:
+https://aka.ms/dotnet-download
+
+Learn about SDK resolution:
+https://aka.ms/dotnet/sdk-not-found
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-ubuntu-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-ubuntu channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      ALC ILPP context 1 is unloading
+Cleanup mono
+debugger-agent: Unable to listen on 29
+[Package Manager] Server process was shutdown
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1785129529837,"processId":960113,"allocatedMemory":11180292,"memoryLabels":[{"Default":24121},{"Permanent":15960},{"Thread":1084656},{"Manager":17929},{"VertexData":8},{"Geometry":408},{"Texture":160},{"Shader":79882},{"Material":24},{"GfxDevice":36040},{"Animation":456},{"Audio":3032},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":360},{"Input":26888},{"JobScheduler":33024},{"TextLib":280},{"Mono":32},{"MonoCode":96},{"ScriptingNativeRuntime":155096},{"BaseObject":1622952},{"Resource":1064},{"Renderer":3000},{"Transform":4717},{"File":828},{"WebCam":80},{"Culling":32},{"Terrain":11298},{"Wind":24},{"String":37533},{"DynamicArray":104992},{"HashMap":102968},{"Utility":2658752},{"Curl":2531},{"PoolAlloc":1952},{"AI":80},{"TypeTree":14981},{"ScriptManager":512},{"RuntimeInitializeOnLoadManager":64},{"SpriteAtlas":112},{"GI":7384},{"Director":8208},{"CloudService":14096},{"WebRequest":589},{"VR":47754},{"SceneManager":536},{"Video":64},{"LazyScriptCache":32},{"Camera":17},{"Secure":10337},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57552},{"StaticSafetyDebugInfo":278528},{"Analytics":464},{"Hierarchy":1416},{"CoreStats":13112},{"Identifiers":6480},{"Gui":128},{"EditorUtility":76436},{"VersionControl":4},{"Undo":979},{"AssetDatabase":4549160},{"EditorGi":328},{"UnityConnect":29408},{"Upm":1744},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":149},{"ProfilerEditor":9746},{"CoreBusinessMetrics":2387},{"Licensing":1096},{"AssetReference":32},{"IPCStream":32}]}

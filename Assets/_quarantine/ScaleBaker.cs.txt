@@ -1,0 +1,54 @@
+using UnityEngine;
+using UnityEditor;
+
+/// <summary>
+/// Bakes 140x scale into violet_tbp.fbx mesh vertices + bindposes.
+/// Saves modified mesh as a new asset.
+/// </summary>
+public class ScaleBaker : AssetPostprocessor
+{
+    const float BAKE_SCALE = 663f;
+
+    void OnPostprocessModel(GameObject imported)
+    {
+        if (!assetPath.Contains("violet_tbp.fbx")) return;
+        BakeAndSaveMesh(imported, assetPath);
+    }
+
+    static void BakeAndSaveMesh(GameObject root, string path)
+    {
+        var renderers = root.GetComponentsInChildren<SkinnedMeshRenderer>();
+        foreach (var smr in renderers)
+        {
+            var mesh = smr.sharedMesh;
+            if (mesh == null) continue;
+
+            Debug.Log($"[ScaleBaker] {path} PRE-BAKE bounds: {mesh.bounds}");
+
+            // Create a copy of the mesh to modify
+            var bakedMesh = Object.Instantiate(mesh);
+
+            // Bake vertices
+            var vertices = bakedMesh.vertices;
+            for (int i = 0; i < vertices.Length; i++)
+                vertices[i] *= BAKE_SCALE;
+            bakedMesh.vertices = vertices;
+
+            // Bake bindposes
+            var bindposes = bakedMesh.bindposes;
+            var inverseScale = Matrix4x4.Scale(Vector3.one / BAKE_SCALE);
+            for (int i = 0; i < bindposes.Length; i++)
+                bindposes[i] = bindposes[i] * inverseScale;
+            bakedMesh.bindposes = bindposes;
+
+            bakedMesh.RecalculateBounds();
+            Debug.Log($"[ScaleBaker] {path} POST-BAKE bounds: {bakedMesh.bounds}");
+
+            // Save as new asset
+            string meshPath = "Assets/Art/Characters/Violet/violet_tbp_baked.asset";
+            AssetDatabase.CreateAsset(bakedMesh, meshPath);
+            AssetDatabase.SaveAssets();
+            Debug.Log($"[ScaleBaker] Saved baked mesh to {meshPath}");
+        }
+    }
+}

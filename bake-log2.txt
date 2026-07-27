@@ -1,0 +1,658 @@
+Unity Editor version:    6000.3.20f1 (c9ba695d4f07)
+Branch:                  6000.3/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #6-Ubuntu SMP PREEMPT Tue May 26 12:04:34 UTC 2026
+Kernel version:          7.0.0-1006-aws
+Architecture:            x86_64
+Available memory:        15984 MB
+Date:                    2026-07-26T17:59:53Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Initialize udev device monitor.
+[Licensing::IpcConnector] Connection to channel LicenseClient-ubuntu refused
+[Licensing::Module] Successfully launched the LicensingClient (PId: 661704)
+
+COMMAND LINE ARGUMENTS:
+/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Unity
+-batchmode
+-nographics
+-projectPath
+/home/ubuntu/violet-and-marlowe-unity
+-executeMethod
+ScaleBakeRunner.Bake
+-logFile
+bake-log2.txt
+Successfully changed project path to: /home/ubuntu/violet-and-marlowe-unity
+/home/ubuntu/violet-and-marlowe-unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [129647983463808]  Target information:
+
+Player connection [129647983463808]  * "[IP] 172.31.34.122 [Port] 55504 [Flags] 2 [Guid] 967620433 [EditorId] 967620433 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [129647983463808]  * "[IP] 172.20.0.1 [Port] 55504 [Flags] 2 [Guid] 967620433 [EditorId] 967620433 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [129647983463808]  * "[IP] 172.17.0.1 [Port] 55504 [Flags] 2 [Guid] 967620433 [EditorId] 967620433 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [129647983463808]  * "[IP] 100.75.243.40 [Port] 55504 [Flags] 2 [Guid] 967620433 [EditorId] 967620433 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [129647983463808]  * "[IP] 172.19.0.1 [Port] 55504 [Flags] 2 [Guid] 967620433 [EditorId] 967620433 [Version] 1048832 [Id] LinuxEditor(16,172.31.34.122) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [129647983463808] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [129647983463808] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-661696" after 0.3 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ubuntu" at "2026-07-26T17:59:53.624394Z"
+[SignatureVerifier] Application signature verification not supported on this platform.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              e468572cd65c4b099f751ca6034bbcf1
+  Correlation Id:          bbdeb8a86706ade4e43e0bb2bf7d08f3
+  External correlation Id: 1834773817507457486
+  Machine Id:              x90OabNnkMz+jWI7P8jSYabrvAU=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ubuntu" (connect: 0.57s, validation: 0.09s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ubuntu-notifications" at "2026-07-26T17:59:53.711697Z"
+[Licensing::Module] Connected to LicensingClient (PId: 661704, launch time: 0.00, total connection time: 0.66s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 11270696607855-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.02
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.70s
+[Licensing::Module] Licensing is initialized (took 0.28s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+ALSA lib confmisc.c:855:(parse_card) [error.core] cannot find card '0'
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) [error.core] error evaluating strings
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) [error.core] error evaluating name
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5734:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM default
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+Forced to initialize FMOD to to the device driver's system output rate 48000, this may impact performance and/or give inconsistent experiences compared to selected sample rate 48000
+ALSA lib confmisc.c:855:(parse_card) [error.core] cannot find card '0'
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) [error.core] error evaluating strings
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) [error.core] error evaluating name
+ALSA lib conf.c:5211:(_snd_config_evaluate) [error.core] function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5734:(snd_config_expand) [error.core] Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) [error.pcm] Unknown PCM default
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+FMOD initialized on nosound output
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+[Licensing::Client] Successfully resolved entitlement details
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.20f1 (c9ba695d4f07)
+[Subsystems] Discovering subsystems at path /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /home/ubuntu/violet-and-marlowe-unity/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = '/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Managed'
+Mono path[1] = '/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
+Mono config path = '/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.002536 seconds.
+- Loaded All Assemblies, in  0.611 seconds
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Licensing::Client] Successfully resolved entitlement details
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.735 seconds
+Domain Reload Profiling: 2345ms
+	BeginReloadAssembly (158ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (10ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (283ms)
+		LoadAssemblies (149ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (277ms)
+			TypeCache.Refresh (274ms)
+				TypeCache.ScanAssembly (250ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1735ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1668ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (105ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (279ms)
+			ProcessInitializeOnLoadMethodAttributes (1113ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 61 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.12.4 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e)
+    com.unity.inputsystem@1.19.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.12 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.11 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.visualscripting@8bed5ad90189)
+    com.unity.ide.visualstudio@2.0.26 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.ide.rider@3.0.40 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.ide.rider@e4950c6d131b)
+    com.unity.editorcoroutines@1.1.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.editorcoroutines@87a15ed012c2)
+    com.unity.performance.profile-analyzer@1.4.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.performance.profile-analyzer@2bb26871883c)
+    com.unity.testtools.codecoverage@1.3.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.testtools.codecoverage@19a841221620)
+    com.unity.searcher@4.9.4 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.29 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.burst@6bb9aca3ef38)
+    com.unity.mathematics@1.3.3 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.mathematics@19a9377c4ffa)
+    com.unity.collections@2.6.6 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.collections@9796e5ee0d9e)
+    com.unity.settings-manager@2.1.1 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.settings-manager@0b8638c5ce86)
+    com.unity.nuget.mono-cecil@1.11.6 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.feature.development@1.0.2 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.feature.development@767aadbc6eb7)
+    com.unity.render-pipelines.universal@17.3.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.render-pipelines.universal@25dc82fa87d3)
+    com.unity.test-framework@1.6.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.test-framework@0bd5c5194236)
+    com.unity.multiplayer.center@1.0.1 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb)
+    com.unity.ugui@2.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.ugui@5e3c170cdd2e)
+    com.unity.modules.accessibility@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.ext.nunit@ec2d0043d6fc)
+    com.unity.render-pipelines.core@17.3.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.render-pipelines.core@11fc77efc310)
+    com.unity.shadergraph@17.3.0 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.shadergraph@1e99c239931b)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: /home/ubuntu/violet-and-marlowe-unity/Library/PackageCache/com.unity.render-pipelines.universal-config@dbe3fd082d8f)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://unix:/tmp/ilpp.sock-921afec3e86500132eca42854089e699
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/ubuntu/violet-and-marlowe-unity/
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 67.0625ms
+Starting: /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Tools/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /home/ubuntu/violet-and-marlowe-unity
+DisplayProgressbar: Compiling Scripts
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll" in favor of "/home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@6bb9aca3ef38/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 38.7849ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll, with 147 defines and 342 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library/Bee/artifacts/1300b0aE.dag/Unity.Collections.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with /home/ubuntu/Unity/Hub/Editor/6000.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@6bb9aca3ef38/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 627.5976ms
+ExitCode: 0 Duration: 3s888ms
+[638/829    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[825/829    2s] Csc Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets/Editor/HUDSetup.cs(282,31): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/HUDSetup.cs(289,32): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/VioletTextureAssigner.cs(15,16): warning CS0219: The variable 'fbxPath' is assigned but its value is never used
+[826/829    0s] ILPostProcess Library/Bee/artifacts/1300b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1300b0aE.dag/Assembly-CSharp-Editor.dll, with 147 defines and 342 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[827/829    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[828/829    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (3.86 seconds), 5 items updated, 829 evaluated
+Assets/Editor/HUDSetup.cs(282,31): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/HUDSetup.cs(289,32): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets/Editor/VioletTextureAssigner.cs(15,16): warning CS0219: The variable 'fbxPath' is assigned but its value is never used
+Assets/Editor/VioletTextureAssigner.cs(15,16): warning CS0219: The variable 'fbxPath' is assigned but its value is never used
+AssetDatabase: script compilation time: 4.681222s
+Total cache size 217349797
+Total cache size after purge 217349797, took 00:00:00.0760702
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.385 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for Android target not found
+Build settings updated: WalkTheBlock scene added
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+BuildSettingsSetup:.cctor () (at Assets/Editor/BuildSettingsSetup.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:124)
+
+(Filename: Assets/Editor/BuildSettingsSetup.cs Line: 14)
+
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.234 seconds
+Domain Reload Profiling: 5617ms
+	BeginReloadAssembly (287ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (29ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (966ms)
+		LoadAssemblies (615ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (476ms)
+			TypeCache.Refresh (348ms)
+				TypeCache.ScanAssembly (324ms)
+			BuildScriptInfoCaches (103ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (4234ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3910ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (56ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (278ms)
+			ProcessInitializeOnLoadAttributes (3333ms)
+			ProcessInitializeOnLoadMethodAttributes (230ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (39ms)
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=604c1eddae86261689b7c45c2cd24bf5): Total: 12.420 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=5474 ms
+		Asset DB Callback time: managed=725 ms, native=19 ms
+		Scripting: domain reloads=1, domain reload time=1386 ms, compile time=4741 ms, other=72 ms
+		Project Asset Count: scripts=1315, non-scripts=2309
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokeCustomDependenciesCallbacks: 0.006ms
+	InvokePackagesCallback: 13.693ms
+	ApplyChangesToAssetFolders: 0.603ms
+	Scan: 621.676ms
+	OnSourceAssetsModified: 1.245ms
+	CategorizeAssetsWithTransientArtifact: 104.388ms
+	ProcessAssetsWithTransientArtifactChanges: 124.224ms
+	CategorizeAssets: 139.985ms
+	ImportOutOfDateAssets: 4248.201ms (-494.621ms without children)
+		CompileScripts: 4740.620ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 0.387ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.817ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
+		OnDemandSchedulerStart: 0.992ms
+	PostProcessAllAssets: 727.448ms
+	Hotreload: 3.359ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 2.238ms
+	PersistCurrentRevisions: 0.172ms
+	UnloadStreamsEnd: 0.002ms
+	GenerateScriptTypeHashes: 66.345ms
+	Untracked: 6432.729ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 0.106ms
+Initializing Unity extensions:
+UpdateMenuTitleForLanguage: 10
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-violet-and-marlowe-unity
+Cannot add menu item 'VioletAndMarlowe/Build Scene With Violet Model' for method 'WalkTheBlockSceneBuilder.BuildSceneWithVioletCharacter' because a menu item with the same name already exists.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.MenuItemScriptCommand:Update (UnityEditor.MenuItem,System.Reflection.MethodInfo) (at /home/bokken/build/output/unity/unity/Editor/Mono/MenuItem.cs:128)
+UnityEditor.MenuService:ExtractMenuItemsFromAttributes () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorMode/MenuService.cs:375)
+UnityEditor.MenuService:GetMenuItemsFromAttributesById (string) (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorMode/MenuService.cs:310)
+UnityEditor.MenuService:GetMenuItemsFromAttributes () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorMode/MenuService.cs:64)
+
+(Filename: /home/bokken/build/output/unity/unity/Editor/Mono/MenuItem.cs Line: 128)
+
+Unloading 224 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6622 unused Assets / (10.6 MB). Loaded Objects now: 7364.
+Memory consumption went from 213.8 MB to 203.2 MB.
+Total: 24.205852 ms (FindLiveObjects: 0.952033 ms CreateObjectMapping: 0.769672 ms MarkObjects: 13.200464 ms  DeleteObjects: 9.278947 ms)
+
+[ScaleBakeRunner] Starting bake...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ScaleBakeRunner:Bake () (at Assets/Editor/ScaleBakeRunner.cs:12)
+
+(Filename: Assets/Editor/ScaleBakeRunner.cs Line: 12)
+
+Start importing Assets/Art/Characters/Violet/violet_tbp.fbx using Guid(eb5207fcea3db20a99ffddda3211f4cc) (FBXImporter)Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Keyframe reduction: Ratio: 100.000000%;
+[ScaleBaker] Assets/Art/Characters/Violet/violet_tbp.fbx PRE-BAKE bounds: Center: (0.00, 0.00, -0.01), Extents: (0.00, 0.00, 0.01)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ScaleBaker:BakeAndSaveMesh (UnityEngine.GameObject,string) (at Assets/Editor/ScaleBaker.cs:26)
+ScaleBaker:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/ScaleBaker.cs:15)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+ScaleBakeRunner:Bake () (at Assets/Editor/ScaleBakeRunner.cs:14)
+
+(Filename: Assets/Editor/ScaleBaker.cs Line: 26)
+
+[ScaleBaker] Assets/Art/Characters/Violet/violet_tbp.fbx POST-BAKE bounds: Center: (0.00, 0.01, -0.83), Extents: (0.67, 0.19, 0.82)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ScaleBaker:BakeAndSaveMesh (UnityEngine.GameObject,string) (at Assets/Editor/ScaleBaker.cs:45)
+ScaleBaker:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/ScaleBaker.cs:15)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+ScaleBakeRunner:Bake () (at Assets/Editor/ScaleBakeRunner.cs:14)
+
+(Filename: Assets/Editor/ScaleBaker.cs Line: 45)
+
+Calls to "AssetDatabase.CreateAsset" are restricted during asset importing. Please make sure this function is not called from ScriptedImporters or PostProcessors, as it is a source of non-determinism. This warning will eventually become an exception.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:CreateAsset (UnityEngine.Object,string)
+ScaleBaker:BakeAndSaveMesh (UnityEngine.GameObject,string) (at Assets/Editor/ScaleBaker.cs:49)
+ScaleBaker:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/ScaleBaker.cs:15)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+ScaleBakeRunner:Bake () (at Assets/Editor/ScaleBakeRunner.cs:14)
+
+[Assets/Editor/ScaleBakeRunner.cs line 14]
+
+Calls to "AssetDatabase.SaveAssets" are restricted during asset importing. Please make sure this function is not called from ScriptedImporters or PostProcessors, as it is a source of non-determinism.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+ScaleBaker:BakeAndSaveMesh (UnityEngine.GameObject,string) (at Assets/Editor/ScaleBaker.cs:50)
+ScaleBaker:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/ScaleBaker.cs:15)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+ScaleBakeRunner:Bake () (at Assets/Editor/ScaleBakeRunner.cs:14)
+
+[Assets/Editor/ScaleBakeRunner.cs line 14]
+
+[ScaleBaker] Saved baked mesh to Assets/Art/Characters/Violet/violet_tbp_baked.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ScaleBaker:BakeAndSaveMesh (UnityEngine.GameObject,string) (at Assets/Editor/ScaleBaker.cs:51)
+ScaleBaker:OnPostprocessModel (UnityEngine.GameObject) (at Assets/Editor/ScaleBaker.cs:15)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethodIfAvailable (object,string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1182)
+UnityEditor.AssetPostprocessingInternal:CallPostProcessMethods (string,object[]) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:1141)
+UnityEditor.AssetPostprocessingInternal:PostprocessMesh (UnityEngine.GameObject) (at /home/bokken/build/output/unity/unity/Editor/Mono/AssetPostprocessor.cs:776)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+ScaleBakeRunner:Bake () (at Assets/Editor/ScaleBakeRunner.cs:14)
+
+(Filename: Assets/Editor/ScaleBaker.cs Line: 51)
+
+ -> (artifact id: '2f442c17daf1da8fd2c65520878f30f1') in 0.577783939 seconds
+Start importing Assets/Art/Characters/Violet/violet_tbp_baked.asset using Guid(7b99d6eb9f31dc3b592de35d43167039) (NativeFormatImporter) -> (artifact id: 'b62a470f0752044c25ca5616714d9079') in 0.012491445 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3bec904889d2d7c47ab3e6584d133093): Total: 0.711 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=71 ms, native=626 ms
+		Asset DB Callback time: managed=7 ms, native=5 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=1315, non-scripts=2310
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	InvokeCustomDependenciesCallbacks: 0.005ms
+	InvokePackagesCallback: 0.005ms
+	ApplyChangesToAssetFolders: 0.380ms
+	Scan: 17.332ms
+	OnSourceAssetsModified: 0.961ms
+	CategorizeAssetsWithTransientArtifact: 0.019ms
+	ProcessAssetsWithTransientArtifactChanges: 0.662ms
+	CategorizeAssets: 68.035ms
+	ImportOutOfDateAssets: 596.072ms (1.244ms without children)
+		ImportManagerImport: 592.539ms (1.661ms without children)
+			ImportInProcess: 590.819ms
+			UpdateCategorizedAssets: 0.060ms
+		ReloadNativeAssets: 0.045ms
+		UnloadImportedAssets: 0.429ms
+		ReloadImportedAssets: 0.002ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.040ms
+		InitializingProgressBar: 0.015ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.003ms
+		OnDemandSchedulerStart: 0.755ms
+	PostProcessAllAssets: 8.928ms
+	Hotreload: 2.725ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.291ms
+	UnloadStreamsBegin: 0.085ms
+	PersistCurrentRevisions: 0.253ms
+	UnloadStreamsEnd: 0.001ms
+	Untracked: 15.160ms
+
+ConsistencyChecker - guid: eb5207fcea3db20a99ffddda3211f4cc, dependenciesHash.value: f3f267a11019eab923be2135d7ee0e04, artifactid: 2f442c17daf1da8fd2c65520878f30f1, producedFiles[0].extension: , producedFiles[0].contentHash: bcbb7c67b41ae7c9034c48809f004ebb
+ConsistencyChecker - guid: eb5207fcea3db20a99ffddda3211f4cc, dependenciesHash.value: f3f267a11019eab923be2135d7ee0e04, artifactid: ea2a722525baf82a60ea0f2c19278b36, producedFiles[0].extension: , producedFiles[0].contentHash: 3cd58d2fd1657cad7124f6d721693672
+Importer(FBXImporter) generated inconsistent result for asset(guid:eb5207fcea3db20a99ffddda3211f4cc) "Assets/Art/Characters/Violet/violet_tbp.fbx"
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+ScaleBakeRunner:Bake () (at Assets/Editor/ScaleBakeRunner.cs:14)
+
+[Assets/Editor/ScaleBakeRunner.cs line 14]
+
+[ScaleBakeRunner] Bake complete.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ScaleBakeRunner:Bake () (at Assets/Editor/ScaleBakeRunner.cs:15)
+
+(Filename: Assets/Editor/ScaleBakeRunner.cs Line: 15)
+
+
+(process:661696): Gtk-CRITICAL **: 19:00:10.565: gtk_widget_hide: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(process:661696): Gtk-CRITICAL **: 19:00:10.565: gtk_widget_destroy: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(process:661696): GLib-GObject-CRITICAL **: 19:00:10.565: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+Disable old input system
+[Project] Loading completed in 17.525 seconds
+	Project init time: 				16.053 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.604 seconds
+		Asset Database init time: 		0.111 seconds
+		Global illumination init time: 	0.005 seconds
+		Assemblies load time: 			2.369 seconds
+		Unity extensions init time: 	0.013 seconds
+		Asset Database refresh time: 	12.420 seconds
+	Scene opening time: 			1.456 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1785088810569,"processId":661696,"projectLoad":17.525070005,"projectInit":16.053064753,"templateInit":0.0,"packageManagerInit":0.604024141,"assetDatabaseInit":0.110927178,"globalIlluminationInit":0.005076084,"assembliesLoad":2.369347358,"unityExtensionsInit":0.012647616,"assetDatabaseRefresh":12.420103115,"sceneOpening":1.45599921}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1785088810569,"processId":661696,"editorVersion":"6000.3.20f1 (c9ba695d4f07)","branch":"6000.3/staging","buildType":"Release","platform":"Linux"}
+Asset Pipeline Refresh (id=d29ecb4c5af33a2a99ada75ef97adc3e): Total: 0.122 seconds - Initiated by RefreshV2(ForceSynchronousImport)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+[UnityConnectServicesConfig] config is NOT valid, switching to default
+Created GICache directory at /home/ubuntu/.cache/unity3d/GiCache. Took: 0.002s, timestamps: [17.530 - 17.532]
+TrimDiskCacheJob: Current cache size 0mb
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      ALC ILPP context 1 is unloading

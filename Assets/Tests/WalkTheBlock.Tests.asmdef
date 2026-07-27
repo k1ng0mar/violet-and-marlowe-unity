@@ -1,0 +1,19 @@
+{
+  "name": "WalkTheBlock.Tests",
+  "references": [
+    "VioletAndMarlowe.Scripts",
+    "Unity.InputSystem",
+    "UnityEngine.TestRunner",
+    "Unity.InputSystem.TestFramework"
+  ],
+  "optionalUnityReferences": [],
+  "includePlatforms": [],
+  "excludePlatforms": ["Android"],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "prebuiltReferences": [],
+  "autoReferenceAdditionalFiles": false,
+  "defineConstraints": [],
+  "versionValidateReferences": [],
+  "testAssemblies": true
+}
