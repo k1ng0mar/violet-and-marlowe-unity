@@ -128,8 +128,8 @@ public class WalkTheBlockPlayModeTests : InputTestFixture
         Release(keyboard.wKey);
         float walkDelta = Vector3.Distance(walkStart, player.transform.position);
         
-        // Wait for dash cooldown
-        yield return new WaitForSeconds(1.0f);
+        // Wait for dash cooldown (dashCooldown=1.5f, walk phase takes ~0.3s, so total elapsed ~1.3s — need >1.5s)
+        yield return new WaitForSeconds(2.0f);
         
         // Measure dash distance — use longer walk/dash windows for reliable measurement
         Vector3 dashStart = player.transform.position;

@@ -1,11 +1,12 @@
 # Violet & Marlowe — TRUTH.md
 
-Last updated: 2026-07-26 (Texture restoration — violet_albedo extracted from GLB and assigned to Material.001)
-Unity 6.3.20f1 LTS | URP 17.3.0 | Input System 1.19.0 | Test Framework 1.6.0
+Last updated: 2026-07-28 (Animation pipeline complete, heist fixes, HUD armor bar, git + GitHub)
+Unity 6.5.5f1 (scaleway) | Unity 6.3.20f1 (AWS) | Input System 1.19.0 | Test Framework 1.6.0
 
 ## PlayMode Test Results — VERIFIED ✅
 
-**34/34 tests PASS** — verified via `test-results.xml` (exit code 0, no failures).
+**35/35 tests PASS** — verified via `test-results.xml` (exit code 0, no failures).
+Tested on Unity 6.5.5f1 (scaleway, VNC visible) + Unity 6.3.20f1 (AWS, batchmode).
 
 ### Original 11 Tests
 | # | Test | Status |
@@ -91,7 +92,44 @@ Unity 6.3.20f1 LTS | URP 17.3.0 | Input System 1.19.0 | Test Framework 1.6.0
 - Combat / enemies / weapons (locked out until heist loop feels good on device)
 - Alarm / fail state (comes with combat later)
 - Open world (future scope only)
-|- **Real artwork / animations** (violet_tbp.fbx imported with Humanoid avatar + SkinnedMeshRenderer — textures missing, need extraction from GLB; no animations yet)
+
+### Animation Pipeline ✅ (NEW — 2026-07-28)
+- **Mixamo clips**: 5 FBX files imported to `Assets/Art/Characters/Violet/Animations/`
+  - Idle.fbx (1.2MB, loop=ON)
+  - Walking.fbx (286KB, loop=ON)
+  - Running.fbx (260KB, loop=ON)
+  - Jump.fbx (350KB, loop=OFF)
+  - Start Walking.fbx (442KB, loop=ON)
+- **Rig**: All Humanoid, Avatar = Copy From violet_tbpAvatar, motionNode = mixamorig:Hips
+- **VioletAnimator.controller**: `Assets/Art/Characters/Violet/VioletAnimator.controller`
+  - Parameters: Speed (float, default 0), Jump (trigger)
+  - States: Idle (default), Walk, Run, Jump
+  - Transitions: Idle↔Walk (0.5/0.3), Walk↔Run (5.0/4.5), Any→Jump (trigger), Jump→Idle (exit time 0.9)
+  - All transition durations: 0.1
+- **PlayerController wired**: `UpdateAnimation()` method feeds Speed (damped) + Jump trigger
+- **Scene**: WalkTheBlock.unity references VioletAnimator controller
+- **Visual verification needed**: retargeting at 142.07x instance scale — needs on-device check
+
+### Heist Bug Fixes (NEW — 2026-07-28)
+3 critical bugs found by code review, fixed by Kimi via unity-mcp:
+1. **CarryItem → HeistManager notification**: CarryItem now calls HeistManager.OnLootSecured after pickup (was stuck at VAULT_REACHED)
+2. **Extraction dwell**: Extraction now requires sustained presence (was exploitable by walk-in/out/in)
+3. **CarryItem physics state**: Drop() now restores original physics state instead of blindly re-enabling gravity
+4. **Speed restore race**: HeistManager captures speeds lazily instead of in Start() (avoids DevConfigLoader ordering issue)
+
+### HUD Updates (NEW — 2026-07-28)
+- Armor bar added next to health bar (bottom-center)
+- Armor stat tracked in test assertions
+- Functional + adaptive layout
+
+### Scaleway Dev Box (NEW — 2026-07-28)
+- **VM**: em-crazy-noether, Ubuntu 26.04, 32GB RAM, 911GB disk
+- **Unity**: 6.5.5f1 (6000.5.5f1) with V&M project loaded
+- **unity-mcp**: CoplayDev/unity-mcp v10.1.0, HTTP transport on port 8080, **47 tools connected**
+- **Kimi K3**: Primary model via modal.direct/v1, Bearer auth, reasoning model, multimodal
+- **Hermes**: v0.19.0, memories/skills/SOUL.md synced from AWS, GalaxyMem 11 datasets
+- **GitHub/Tavily**: Keys configured
+- **Git**: Both AWS (master branch) and scaleway (main branch) push to k1ng0mar/violet-and-marlowe-unity
 
 ## APK Build — VERIFIED ✅ (Current On-Device Validation Build)
 
@@ -131,9 +169,9 @@ Unity 6.3.20f1 LTS | URP 17.3.0 | Input System 1.19.0 | Test Framework 1.6.0
 **Material**: `violet_material` (persistent asset at `Assets/Art/Characters/Violet/violet_material.mat`), shader=Standard
 **Textures**: **YES** — mainTexture=`violet_albedo` (2048x2048 ASTC_6x6), extracted from `/home/ubuntu/3D assets/violet/violet_texture.glb` (embedded PNG, bufferView 5, offset 5385984, length 13930317)
 **UV/Vertex match**: GLB=11862 verts, FBX=11977 verts (115 extra due to FBX vertex splitting for normals/UVs — <1% difference, standard export behavior, UV layout matches)
-**Model height**: ~0.013m (tiny!), scale applied = 140x → effective ~1.82m (TEMPORARY — flagged to bake at animation step)
+**Model height**: ~0.0027m raw FBX mesh. Final scale: 142.07x instance transform → effective skinned height = **1.80m** ✅
 **Colliders**: None on model (CharacterController handles collision)
-**Animator**: Present, isHuman=True, no controller/clips yet (bind pose only)
+**Animator**: Present, isHuman=True, VioletAnimator.controller wired, 5 Mixamo clips imported
 **Rotation**: Player transform rotates to face movement direction (unchanged from proxy)
 **VisiblePlayer_FacesMoveDirection**: rotated 89.4° (still works with real model)
 
@@ -146,8 +184,9 @@ Unity 6.3.20f1 LTS | URP 17.3.0 | Input System 1.19.0 | Test Framework 1.6.0
 6. Test assertion: `VisiblePlayer_HasRealModelAndAnimator` now checks `mainTexture != null` and `name == "violet_albedo"`
 
 ### Issues Found (next steps)
-- **Scale**: Model was exported at ~1cm scale; 140x scale applied in scene builder. Will bake into model at animation step.
-- **No animations**: Animator has no controller — will need Mixamo animations next
+- **Scale**: Instance transform 142.07x is FINAL approach. Vertex bake and importer globalScale both failed due to bindpose scale-dependence. See wiki/concepts/scale-import-fix.md for full chain.
+- **Mixamo auth**: Adobe OAuth returns access_denied — account needs manual consent/terms acceptance in real browser before API tokens work. Downloads work via direct browser download (FBX Without Skin).
+- **Visual verification needed**: Animation retargeting at 142.07x non-unit instance scale — needs on-device check for drift/jitter/double-scaling
 
 ## Issues Fixed This Session
 1. **TouchButton/CameraTouchDragZone serialization** — split into separate .cs files (Unity can't resolve multiple MonoBehaviours in one file by GUID)
