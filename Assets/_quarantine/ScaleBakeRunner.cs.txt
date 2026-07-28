@@ -1,0 +1,29 @@
+using UnityEditor;
+using UnityEngine;
+
+public class ScaleBakeRunner
+{
+    /// <summary>
+    /// Call via: Unity -executeMethod ScaleBakeRunner.Bake
+    /// Reimports the FBX (triggers ScaleBaker postprocessor), then
+    /// runs the bone reporter, rebuilds the scene with the baked mesh,
+    /// and quits.
+    /// </summary>
+    public static void Bake()
+    {
+        Debug.Log("[ScaleBakeRunner] Step 1: Reimport FBX (triggers ScaleBaker postprocessor)...");
+        var path = "Assets/Art/Characters/Violet/violet_tbp.fbx";
+        AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
+        AssetDatabase.SaveAssets();
+        Debug.Log("[ScaleBakeRunner] Step 1 complete: bake saved.");
+
+        Debug.Log("[ScaleBakeRunner] Step 2: Run bone/mesh reporter...");
+        ScaleBakeReporter.Report();
+
+        Debug.Log("[ScaleBakeRunner] Step 3: Rebuild scene with baked mesh...");
+        WalkTheBlockSceneBuilder.BuildSceneWithVioletCharacter();
+
+        Debug.Log("[ScaleBakeRunner] All steps complete.");
+        EditorApplication.Exit(0);
+    }
+}

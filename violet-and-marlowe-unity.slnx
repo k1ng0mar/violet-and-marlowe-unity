@@ -1,0 +1,5 @@
+﻿<Solution>
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="WalkTheBlock.Tests.csproj" />
+  <Project Path="VioletAndMarlowe.Scripts.csproj" />
+</Solution>

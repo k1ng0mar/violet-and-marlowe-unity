@@ -1,0 +1,27 @@
+using UnityEngine;
+using UnityEditor;
+
+/// <summary>
+/// Path-gated import settings for violet_tbp.fbx.
+/// Scales the model to ~1.8m at instance scale 1.
+/// useFileScale=true so Unity's unit conversion applies.
+/// globalScale=659.6 — empirically found via ImportScaleRunner iteration.
+/// Does NOT touch axis settings.
+/// </summary>
+public class VioletModelImportSettings : AssetPostprocessor
+{
+    void OnPreprocessModel()
+    {
+        if (!assetPath.Contains("violet_tbp.fbx")) return;
+
+        var importer = assetImporter as ModelImporter;
+        if (importer == null) return;
+
+        importer.useFileScale = true;
+        importer.globalScale = 659.6f;
+        importer.animationType = ModelImporterAnimationType.Human;
+        importer.avatarSetup = ModelImporterAvatarSetup.CreateFromThisModel;
+
+        Debug.Log($"[VioletImport] OnPreProcess: globalScale={importer.globalScale} useFileScale={importer.useFileScale}");
+    }
+}

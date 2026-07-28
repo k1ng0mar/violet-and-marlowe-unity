@@ -1,0 +1,103 @@
+using UnityEngine;
+using UnityEditor;
+
+/// <summary>
+/// Inspects violet_tbp.fbx bone hierarchy + baked mesh for the scale-bake report.
+/// Logs: hips bone Y position, all bone local positions, baked mesh vertex bounds,
+/// bindpose matrix sample, avatar isHuman status.
+/// </summary>
+public class ScaleBakeReporter : Editor
+{
+    [MenuItem("VioletAndMarlowe/Scale Bake Report")]
+    public static void Report()
+    {
+        string fbxPath = "Assets/Art/Characters/Violet/violet_tbp.fbx";
+        string bakedPath = "Assets/Art/Characters/Violet/violet_tbp_baked.asset";
+
+        GameObject fbx = AssetDatabase.LoadAssetAtPath<GameObject>(fbxPath);
+        if (fbx == null)
+        {
+            Debug.LogError("[ScaleBakeReporter] FBX not found at " + fbxPath);
+            return;
+        }
+
+        // --- FBX bone hierarchy ---
+        var skeletonBones = fbx.GetComponentsInChildren<Transform>();
+        Debug.Log($"[ScaleBakeReporter] FBX root: {fbx.name}, child count: {fbx.transform.childCount}");
+        foreach (var bone in skeletonBones)
+        {
+            Debug.Log($"[ScaleBakeReporter] BONE: {bone.name} pos=({bone.localPosition.x:F6}, {bone.localPosition.y:F6}, {bone.localPosition.z:F6}) scale=({bone.localScale.x:F6}, {bone.localScale.y:F6}, {bone.localScale.z:F6})");
+        }
+
+        // --- Hips specifically ---
+        var hips = fbx.transform.Find("Hips");
+        if (hips == null)
+        {
+            // Try recursive find
+            hips = FindDeep(fbx.transform, "Hips");
+        }
+        if (hips != null)
+        {
+            Debug.Log($"[ScaleBakeReporter] HIPS FOUND: name={hips.name} localPos.y={hips.localPosition.y:F6} worldPos.y={hips.position.y:F6}");
+        }
+        else
+        {
+            Debug.Log("[ScaleBakeReporter] Hips bone NOT FOUND by name. Listing all bone names:");
+            foreach (var b in skeletonBones)
+                Debug.Log($"  bone: {b.name}");
+        }
+
+        // --- FBX mesh bounds (raw) ---
+        var fbxSMR = fbx.GetComponentInChildren<SkinnedMeshRenderer>();
+        if (fbxSMR != null)
+        {
+            var fbxMesh = fbxSMR.sharedMesh;
+            Debug.Log($"[ScaleBakeReporter] FBX mesh: verts={fbxMesh.vertexCount} bounds={fbxMesh.bounds} extents.y={fbxMesh.bounds.extents.y:F6}");
+            if (fbxMesh.bindposes.Length > 0)
+            {
+                Debug.Log($"[ScaleBakeReporter] FBX bindpose[0]:\n{fbxMesh.bindposes[0]}");
+                Debug.Log($"[ScaleBakeReporter] FBX bindpose[0] pos: ({fbxMesh.bindposes[0].m03:F6}, {fbxMesh.bindposes[0].m13:F6}, {fbxMesh.bindposes[0].m23:F6})");
+            }
+        }
+
+        // --- Baked mesh ---
+        var bakedMesh = AssetDatabase.LoadAssetAtPath<Mesh>(bakedPath);
+        if (bakedMesh != null)
+        {
+            Debug.Log($"[ScaleBakeReporter] BAKED mesh: verts={bakedMesh.vertexCount} bounds={bakedMesh.bounds} extents.y={bakedMesh.bounds.extents.y:F6}");
+            if (bakedMesh.bindposes.Length > 0)
+            {
+                Debug.Log($"[ScaleBakeReporter] BAKED bindpose[0]:\n{bakedMesh.bindposes[0]}");
+                Debug.Log($"[ScaleBakeReporter] BAKED bindpose[0] pos: ({bakedMesh.bindposes[0].m03:F6}, {bakedMesh.bindposes[0].m13:F6}, {bakedMesh.bindposes[0].m23:F6})");
+            }
+            // Sample first 3 vertices
+            var verts = bakedMesh.vertices;
+            for (int i = 0; i < Mathf.Min(3, verts.Length); i++)
+                Debug.Log($"[ScaleBakeReporter] BAKED vert[{i}]: ({verts[i].x:F4}, {verts[i].y:F4}, {verts[i].z:F4})");
+        }
+        else
+        {
+            Debug.LogError("[ScaleBakeReporter] Baked mesh not found at " + bakedPath);
+        }
+
+        // --- Avatar ---
+        var animator = fbx.GetComponentInChildren<Animator>();
+        if (animator != null)
+        {
+            Debug.Log($"[ScaleBakeReporter] Avatar isHuman={animator.avatar?.isHuman} avatarName={animator.avatar?.name}");
+        }
+
+        Debug.Log("[ScaleBakeReporter] Report complete.");
+    }
+
+    static Transform FindDeep(Transform parent, string name)
+    {
+        foreach (Transform child in parent)
+        {
+            if (child.name == name) return child;
+            var found = FindDeep(child, name);
+            if (found != null) return found;
+        }
+        return null;
+    }
+}

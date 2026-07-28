@@ -1,0 +1,23 @@
+# ninja log v5
+0	3689	1784823357925859561	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	be6b0df0ed4720d9
+3015	3302	1784823357557992244	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	e54852066f1d182d
+10	2932	1784823357177512536	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	8247d38acd8dd56e
+8	3351	1784823357599384688	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	d5771cb01a51c5d9
+3	2500	1784823356745004675	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b679bb9526d4223c
+7	3015	1784823357249996953	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a80e0548c08831bf
+3302	3388	1784823357641990959	/home/ubuntu/violet-and-marlowe-unity/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/311x2d2l/obj/arm64-v8a/libswappywrapper.so	55edd53a10bd24ea
+5	3093	1784823357339826610	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	961acfbd6ed4649c
+4924	4999	1784823359251966342	/home/ubuntu/violet-and-marlowe-unity/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/311x2d2l/obj/arm64-v8a/libgame.so	aee4bb19a22ac3ab
+2502	4110	1784823358361643921	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3cf4d26f5d76cf80
+2932	4924	1784823359166087535	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	479f94e5861142fa
+47	3799	1784847810536564421	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a80e0548c08831bf
+49	3807	1784847810527260553	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	8247d38acd8dd56e
+43	3867	1784847810587307491	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b679bb9526d4223c
+44	3916	1784847810649238576	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	961acfbd6ed4649c
+3867	4156	1784847810897752013	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	e54852066f1d182d
+47	4207	1784847810936074286	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	d5771cb01a51c5d9
+41	4358	1784847811102520698	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	be6b0df0ed4720d9
+4156	4692	1784847811435227286	/home/ubuntu/violet-and-marlowe-unity/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/311x2d2l/obj/arm64-v8a/libswappywrapper.so	55edd53a10bd24ea
+3802	5306	1784847812052464166	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3cf4d26f5d76cf80
+3807	5415	1784847812160585215	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	479f94e5861142fa
+5415	5458	1784847812210216154	/home/ubuntu/violet-and-marlowe-unity/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/311x2d2l/obj/arm64-v8a/libgame.so	aee4bb19a22ac3ab

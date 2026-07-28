@@ -1,0 +1,124 @@
+using UnityEngine;
+using UnityEditor;
+
+/// <summary>
+/// Runner: dumps current settings, iterates globalScale with useFileScale=true,
+/// rebuilds scene, exits. Measures via prefab instantiation (not PlayMode).
+/// </summary>
+public class ImportScaleRunner
+{
+    const string FBX_PATH = "Assets/Art/Characters/Violet/violet_tbp.fbx";
+    const float TARGET = 1.8f;
+    const float MIN_H = 1.75f;
+    const float MAX_H = 1.85f;
+    const int MAX_ITERS = 4;
+
+    public static void Run()
+    {
+        Debug.Log("========== IMPORT SCALE ITERATION ==========");
+
+        var importer = AssetImporter.GetAtPath(FBX_PATH) as ModelImporter;
+        if (importer == null)
+        {
+            Debug.LogError("[ImportScaleRunner] FBX importer not found");
+            EditorApplication.Exit(1);
+            return;
+        }
+
+        Debug.Log($"[ImportScaleRunner] CURRENT: globalScale={importer.globalScale} useFileScale={importer.useFileScale} bakeAxisConversion={importer.bakeAxisConversion}");
+
+        float F = 1.42f;
+
+        for (int iter = 1; iter <= MAX_ITERS; iter++)
+        {
+            Debug.Log($"[ImportScaleRunner] --- Iter {iter}: F={F:F4} ---");
+
+            importer.useFileScale = true;
+            importer.globalScale = F;
+            importer.animationType = ModelImporterAnimationType.Human;
+            importer.avatarSetup = ModelImporterAvatarSetup.CreateFromThisModel;
+            importer.SaveAndReimport();
+            AssetDatabase.Refresh();
+
+            GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(FBX_PATH);
+            if (prefab == null) { Debug.LogError("[ImportScaleRunner] Load failed"); continue; }
+
+            var instance = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
+            instance.name = "DIAG_SCALE";
+            instance.transform.localPosition = Vector3.zero;
+            instance.transform.localRotation = Quaternion.identity;
+            instance.transform.localScale = Vector3.one;
+
+            var smr = instance.GetComponentInChildren<SkinnedMeshRenderer>();
+            var animator = instance.GetComponentInChildren<Animator>();
+
+            // For SkinnedMeshRenderer in batchmode (no skinning pass), use sharedMesh.bounds instead
+            // renderer.bounds in batchmode = local bounds, not skinned world bounds
+            float meshSizeY = 0f, rendSizeY = 0f, centerY = 0f, feetY = 0f;
+            if (smr != null)
+            {
+                if (smr.sharedMesh != null)
+                    meshSizeY = smr.sharedMesh.bounds.size.y;
+
+                var rb = smr.bounds;
+                rendSizeY = rb.size.y;
+                centerY = rb.center.y;
+                feetY = rb.center.y - rb.extents.y;
+            }
+
+            string texName = "null";
+            if (smr != null && smr.sharedMaterial != null && smr.sharedMaterial.mainTexture != null)
+                texName = smr.sharedMaterial.mainTexture.name;
+
+            bool isHuman = animator != null && animator.avatar != null && animator.avatar.isHuman;
+
+            var hips = FindDeep(instance.transform, "mixamorig:Hips");
+            var head = FindDeep(instance.transform, "mixamorig:Head");
+            var leftFoot = FindDeep(instance.transform, "mixamorig:LeftFoot");
+
+            float hipsY = hips != null ? hips.position.y : -1f;
+            float headY = head != null ? head.position.y : -1f;
+            float footY = leftFoot != null ? leftFoot.position.y : -1f;
+
+            Debug.Log($"[ImportScaleRunner] F={F:F4} | mesh.bounds.size.y={meshSizeY:F4} | renderer.bounds.size.y={rendSizeY:F4} | center.y={centerY:F4} | feetY={feetY:F4}");
+            Debug.Log($"[ImportScaleRunner] Hips Y={hipsY:F4} | Head Y={headY:F4} | LeftFoot Y={footY:F4}");
+            Debug.Log($"[ImportScaleRunner] isHuman={isHuman} | tex={texName}");
+
+            Object.DestroyImmediate(instance);
+
+            // Use mesh.bounds.size.y as the primary metric (reliable in batchmode)
+            if (meshSizeY >= MIN_H && meshSizeY <= MAX_H)
+            {
+                Debug.Log($"[ImportScaleRunner] *** TARGET HIT at F={F:F4}: mesh.size.y={meshSizeY:F4} ***");
+
+                // Update the postprocessor to match
+                Debug.Log($"[ImportScaleRunner] Final F={F:F4}. Scene rebuild next.");
+
+                WalkTheBlockSceneBuilder.BuildSceneWithVioletCharacter();
+                Debug.Log("[ImportScaleRunner] Scene rebuilt with final scale.");
+
+                Debug.Log("========== IMPORT SCALE COMPLETE ==========");
+                EditorApplication.Exit(0);
+                return;
+            }
+
+            float F_new = F * TARGET / meshSizeY;
+            Debug.Log($"[ImportScaleRunner] Off target. F_new = {F:F4} * {TARGET}/{meshSizeY:F4} = {F_new:F4}");
+            F = F_new;
+        }
+
+        Debug.LogError($"[ImportScaleRunner] Failed to converge in {MAX_ITERS} iters. Last F={F:F4}");
+        EditorApplication.Exit(1);
+    }
+
+    static Transform FindDeep(Transform parent, string name)
+    {
+        foreach (Transform child in parent)
+        {
+            if (child.name == name) return child;
+            var found = FindDeep(child, name);
+            if (found != null) return found;
+        }
+        return null;
+    }
+}

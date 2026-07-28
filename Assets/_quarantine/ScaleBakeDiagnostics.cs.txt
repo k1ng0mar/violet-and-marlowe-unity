@@ -1,0 +1,183 @@
+using UnityEngine;
+using UnityEditor;
+using UnityEngine.SceneManagement;
+
+/// <summary>
+/// Full diagnostic for the scale-bake gate.
+/// Measures: FBX mesh bounds, bone world Y positions, bone count/scales,
+/// old FBX@140 comparison, full bindpose dump (Hips), baked bindpose dump,
+/// baked mesh skinned bounds at runtime.
+/// Does NOT fix anything. Measurement only.
+/// </summary>
+public class ScaleBakeDiagnostics : Editor
+{
+    [MenuItem("VioletAndMarlowe/Scale Bake Diagnostics")]
+    public static void Run()
+    {
+        string fbxPath = "Assets/Art/Characters/Violet/violet_tbp.fbx";
+        string bakedPath = "Assets/Art/Characters/Violet/violet_tbp_baked.asset";
+
+        GameObject fbxPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(fbxPath);
+        Mesh bakedMesh = AssetDatabase.LoadAssetAtPath<Mesh>(bakedPath);
+
+        if (fbxPrefab == null) { Debug.LogError("[DIAG] FBX not found"); return; }
+        if (bakedMesh == null) { Debug.LogError("[DIAG] Baked mesh not found"); return; }
+
+        Debug.Log("========== SCALE BAKE DIAGNOSTICS ==========");
+
+        // --- 3a: FBX imported mesh bounds ---
+        var fbxSMR = fbxPrefab.GetComponentInChildren<SkinnedMeshRenderer>();
+        if (fbxSMR != null && fbxSMR.sharedMesh != null)
+        {
+            var m = fbxSMR.sharedMesh;
+            Debug.Log($"[DIAG-3a] FBX MESH bounds: min=({m.bounds.min.x:F6}, {m.bounds.min.y:F6}, {m.bounds.min.z:F6}) max=({m.bounds.max.x:F6}, {m.bounds.max.y:F6}, {m.bounds.max.z:F6}) size=({m.bounds.size.x:F6}, {m.bounds.size.y:F6}, {m.bounds.size.z:F6})");
+            Debug.Log($"[DIAG-3a] FBX MESH vertexCount={m.vertexCount}");
+        }
+
+        // --- 3b: Bone world Y positions in FBX rig ---
+        // Instantiate the FBX temporarily to get world positions
+        var fbxInstance = PrefabUtility.InstantiatePrefab(fbxPrefab) as GameObject;
+        fbxInstance.name = "DIAG_FBX_TEMP";
+        fbxInstance.transform.localPosition = Vector3.zero;
+        fbxInstance.transform.localRotation = Quaternion.identity;
+        fbxInstance.transform.localScale = Vector3.one;
+
+        var allBones = fbxInstance.GetComponentsInChildren<Transform>();
+        Debug.Log($"[DIAG-3c] BONE COUNT={allBones.Length}");
+
+        bool allScalesOne = true;
+        foreach (var b in allBones)
+        {
+            if (b.localScale != Vector3.one) allScalesOne = false;
+        }
+        Debug.Log($"[DIAG-3c] ALL bone localScale == 1: {allScalesOne}");
+
+        // Specific bones
+        string[] targetBones = { "mixamorig:Hips", "mixamorig:Spine", "mixamorig:Spine2", "mixamorig:Head", "mixamorig:HeadTop_End",
+                                 "mixamorig:LeftFoot", "mixamorig:RightFoot", "mixamorig:LeftToeBase", "mixamorig:RightToeBase" };
+        foreach (var boneName in targetBones)
+        {
+            var bone = FindDeep(fbxInstance.transform, boneName);
+            if (bone != null)
+            {
+                Debug.Log($"[DIAG-3b] BONE '{boneName}': worldPos.y={bone.position.y:F6} localPos.y={bone.localPosition.y:F6} localScale=({bone.localScale.x:F6}, {bone.localScale.y:F6}, {bone.localScale.z:F6})");
+            }
+            else
+            {
+                Debug.Log($"[DIAG-3b] BONE '{boneName}': NOT FOUND");
+            }
+        }
+
+        // Lowest bone in world Y
+        Transform lowest = null;
+        float lowestY = float.MaxValue;
+        foreach (var b in allBones)
+        {
+            // Skip root if it's at origin
+            if (b == fbxInstance.transform) continue;
+            if (b.position.y < lowestY) { lowestY = b.position.y; lowest = b; }
+        }
+        if (lowest != null)
+        {
+            Debug.Log($"[DIAG-3b] LOWEST BONE: '{lowest.name}' worldPos.y={lowestY:F6}");
+        }
+
+        // --- 3d: ORIGINAL FBX at scale 140 — renderer.bounds ---
+        var oldInstance = PrefabUtility.InstantiatePrefab(fbxPrefab) as GameObject;
+        oldInstance.name = "DIAG_OLD_140";
+        oldInstance.transform.localPosition = Vector3.zero;
+        oldInstance.transform.localRotation = Quaternion.identity;
+        oldInstance.transform.localScale = Vector3.one * 140f;
+
+        var oldSMR = oldInstance.GetComponentInChildren<SkinnedMeshRenderer>();
+        if (oldSMR != null)
+        {
+            // Force a bounds update
+            var oldBounds = oldSMR.bounds;
+            Debug.Log($"[DIAG-3d] OLD FBX@140 renderer.bounds: center=({oldBounds.center.x:F4}, {oldBounds.center.y:F4}, {oldBounds.center.z:F4}) size=({oldBounds.size.x:F4}, {oldBounds.size.y:F4}, {oldBounds.size.z:F4}) extents.y={oldBounds.extents.y:F4}");
+        }
+        DestroyImmediate(oldInstance);
+        Debug.Log("[DIAG-3d] Old FBX@140 temp instance destroyed.");
+
+        // --- 3e: Full bindpose dump — Hips bone (bone index 0 or find Hips) ---
+        if (fbxSMR != null && fbxSMR.sharedMesh != null)
+        {
+            var fbxMesh = fbxSMR.sharedMesh;
+            // Find Hips bindpose index
+            int hipsIndex = -1;
+            for (int i = 0; i < fbxMesh.boneWeights.Length; i++)
+            {
+                // boneWeights reference bone index 0 typically for hips
+                break;
+            }
+            // Just dump bindpose for bone 0 (usually root or hips)
+            if (fbxMesh.bindposes.Length > 0)
+            {
+                var bp = fbxMesh.bindposes[0];
+                Debug.Log($"[DIAG-3e] FBX BINDPOSE[0] (16 vals): {bp.m00:F6} {bp.m01:F6} {bp.m02:F6} {bp.m03:F6} | {bp.m10:F6} {bp.m11:F6} {bp.m12:F6} {bp.m13:F6} | {bp.m20:F6} {bp.m21:F6} {bp.m22:F6} {bp.m23:F6} | {bp.m30:F6} {bp.m31:F6} {bp.m32:F6} {bp.m33:F6}");
+            }
+
+            // Dump all bone names + their bindpose index
+            for (int i = 0; i < Mathf.Min(fbxMesh.bindposes.Length, 5); i++)
+            {
+                var bp = fbxMesh.bindposes[i];
+                Debug.Log($"[DIAG-3e] FBX BINDPOSE[{i}]: t=({bp.m03:F6}, {bp.m13:F6}, {bp.m23:F6})");
+            }
+        }
+
+        // --- Baked mesh bindpose ---
+        if (bakedMesh.bindposes.Length > 0)
+        {
+            var bp = bakedMesh.bindposes[0];
+            Debug.Log($"[DIAG-3e] BAKED BINDPOSE[0] (16 vals): {bp.m00:F6} {bp.m01:F6} {bp.m02:F6} {bp.m03:F6} | {bp.m10:F6} {bp.m11:F6} {bp.m12:F6} {bp.m13:F6} | {bp.m20:F6} {bp.m21:F6} {bp.m22:F6} {bp.m23:F6} | {bp.m30:F6} {bp.m31:F6} {bp.m32:F6} {bp.m33:F6}");
+
+            for (int i = 0; i < Mathf.Min(bakedMesh.bindposes.Length, 5); i++)
+            {
+                var bp2 = bakedMesh.bindposes[i];
+                Debug.Log($"[DIAG-3e] BAKED BINDPOSE[{i}]: t=({bp2.m03:F6}, {bp2.m13:F6}, {bp2.m23:F6})");
+            }
+        }
+
+        // --- Now swap baked mesh onto the FBX instance and measure skinned bounds ---
+        if (fbxSMR != null)
+        {
+            fbxSMR.sharedMesh = bakedMesh;
+        }
+
+        // --- 4: Avatar isHuman ---
+        var animator = fbxInstance.GetComponentInChildren<Animator>();
+        if (animator != null)
+        {
+            Debug.Log($"[DIAG-4] AVATAR isHuman={animator.avatar?.isHuman} name={animator.avatar?.name}");
+        }
+
+        // --- BAKED mesh skinned bounds at scale 1 ---
+        if (fbxSMR != null)
+        {
+            // Force skinning update by requiring a frame — in batchmode we can't, but bounds should update
+            var bakedBounds = fbxSMR.bounds;
+            Debug.Log($"[DIAG-RUNTIME] BAKED@scale1 renderer.bounds: center=({bakedBounds.center.x:F4}, {bakedBounds.center.y:F4}, {bakedBounds.center.z:F4}) size=({bakedBounds.size.x:F4}, {bakedBounds.size.y:F4}, {bakedBounds.size.z:F4})");
+            Debug.Log($"[DIAG-RUNTIME] feetY={bakedBounds.center.y - bakedBounds.extents.y:F4}");
+        }
+
+        // Cleanup
+        DestroyImmediate(fbxInstance);
+        Debug.Log("[DIAG] FBX temp instance destroyed.");
+
+        // --- Also measure baked mesh raw bounds ---
+        Debug.Log($"[DIAG-MESH] BAKED mesh.bounds: min=({bakedMesh.bounds.min.x:F4}, {bakedMesh.bounds.min.y:F4}, {bakedMesh.bounds.min.z:F4}) max=({bakedMesh.bounds.max.x:F4}, {bakedMesh.bounds.max.y:F4}, {bakedMesh.bounds.max.z:F4}) size=({bakedMesh.bounds.size.x:F4}, {bakedMesh.bounds.size.y:F4}, {bakedMesh.bounds.size.z:F4})");
+
+        Debug.Log("========== DIAGNOSTICS COMPLETE ==========");
+    }
+
+    static Transform FindDeep(Transform parent, string name)
+    {
+        foreach (Transform child in parent)
+        {
+            if (child.name == name) return child;
+            var found = FindDeep(child, name);
+            if (found != null) return found;
+        }
+        return null;
+    }
+}

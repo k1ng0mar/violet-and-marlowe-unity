@@ -1,0 +1,8 @@
+/home/ubuntu/violet-and-marlowe-unity/.utmp/Debug/311x2d2l/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/ubuntu/violet-and-marlowe-unity/.utmp/Debug/311x2d2l/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/violet-and-marlowe-unity/.utmp/Debug/311x2d2l/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/home/ubuntu/violet-and-marlowe-unity/.utmp/Debug/311x2d2l/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/home/ubuntu/violet-and-marlowe-unity/.utmp/Debug/311x2d2l/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/violet-and-marlowe-unity/.utmp/Debug/311x2d2l/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+/home/ubuntu/violet-and-marlowe-unity/.utmp/Debug/311x2d2l/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+/home/ubuntu/violet-and-marlowe-unity/.utmp/Debug/311x2d2l/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

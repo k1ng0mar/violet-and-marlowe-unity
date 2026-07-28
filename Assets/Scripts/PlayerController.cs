@@ -54,7 +54,6 @@ public class PlayerController : MonoBehaviour
     private bool usingTouchInput; // when true, UpdateInput() won't overwrite moveInput from keyboard
     private float yaw;
     private float pitch;
-    private Animator animator;
     private Animator modelAnimator;
     private static readonly int AnimSpeed = Animator.StringToHash("Speed");
     private static readonly int AnimJump = Animator.StringToHash("Jump");
